@@ -26,6 +26,28 @@ A premium, international learning platform by **Spark Stack International Tech F
 
 The full visual specification is in [docs/design-system/visual-implementation-blueprint.md](docs/design-system/visual-implementation-blueprint.md).
 
+## Current workspace scaffold
+
+The first application shells and shared UI foundation are now present on the foundation branch. The portal pages are structural placeholders while legacy features are mapped; they are not feature-complete applications.
+
+### Run locally
+
+Requirements: Node.js 20 or later and npm.
+
+```bash
+npm install
+npm run dev:admin
+```
+
+Other portal commands: `npm run dev:founder`, `npm run dev:instructor`, `npm run dev:student` and `npm run dev:institution`.
+
+Validate all portal applications with:
+
+```bash
+npm run typecheck
+npm run build
+```
+
 ## Planned technology direction
 
 - React, TypeScript and Vite
