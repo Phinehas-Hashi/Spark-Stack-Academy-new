@@ -6,3 +6,7 @@ export { StatusBadge } from "./components/StatusBadge";
 export type { StatusBadgeProps, StatusTone } from "./components/StatusBadge";
 export { PageHeader } from "./components/PageHeader";
 export type { PageHeaderProps } from "./components/PageHeader";
+export { ThemeProvider, useTheme } from "./components/ThemeProvider";
+export type { ThemePreference, ResolvedTheme } from "./components/ThemeProvider";
+export { PortalShell } from "./components/PortalShell";
+export type { PortalShellProps, PortalNavigationItem } from "./components/PortalShell";
