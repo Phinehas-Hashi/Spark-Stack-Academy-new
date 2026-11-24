@@ -1,0 +1,119 @@
+/* Spark Stack Academy — shared design tokens.
+   This file defines variables only; it intentionally does not style page elements.
+   Portal applications must consume semantic tokens and scope their own component CSS. */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  --ssa-color-bg: #F6F8FC;
+  --ssa-color-surface: #FFFFFF;
+  --ssa-color-surface-elevated: #FFFFFF;
+  --ssa-color-surface-muted: #F1F4FA;
+
+  --ssa-color-text: #172033;
+  --ssa-color-text-muted: #667085;
+  --ssa-color-text-subtle: #7B8494;
+  --ssa-color-border: #E5EAF2;
+  --ssa-color-border-strong: #D5DDE9;
+
+  --ssa-color-brand: #315EDE;
+  --ssa-color-brand-hover: #254FC7;
+  --ssa-color-brand-soft: #EEF3FF;
+  --ssa-color-accent: #7656D8;
+  --ssa-color-accent-soft: #F2EEFF;
+
+  --ssa-color-success: #16865B;
+  --ssa-color-success-soft: #EAF8F1;
+  --ssa-color-warning: #B7791F;
+  --ssa-color-warning-soft: #FFF5E8;
+  --ssa-color-danger: #D14343;
+  --ssa-color-danger-soft: #FFF0F0;
+  --ssa-color-info: #2563B8;
+  --ssa-color-info-soft: #EDF5FF;
+
+  --ssa-shadow-sm: 0 1px 2px rgb(16 24 40 / 5%);
+  --ssa-shadow-md: 0 4px 12px rgb(16 24 40 / 7%);
+  --ssa-shadow-lg: 0 12px 32px rgb(16 24 40 / 10%);
+
+  --ssa-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ssa-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --ssa-text-xs: 0.75rem;
+  --ssa-text-sm: 0.875rem;
+  --ssa-text-md: 1rem;
+  --ssa-text-lg: 1.125rem;
+  --ssa-text-xl: 1.25rem;
+  --ssa-text-2xl: 1.5rem;
+  --ssa-text-3xl: 1.875rem;
+
+  --ssa-space-1: 0.25rem;
+  --ssa-space-2: 0.5rem;
+  --ssa-space-3: 0.75rem;
+  --ssa-space-4: 1rem;
+  --ssa-space-5: 1.25rem;
+  --ssa-space-6: 1.5rem;
+  --ssa-space-8: 2rem;
+  --ssa-space-10: 2.5rem;
+  --ssa-space-12: 3rem;
+  --ssa-space-16: 4rem;
+
+  --ssa-radius-sm: 0.5rem;
+  --ssa-radius-md: 0.75rem;
+  --ssa-radius-lg: 1rem;
+  --ssa-radius-xl: 1.25rem;
+  --ssa-radius-full: 9999px;
+
+  --ssa-control-height: 2.75rem;
+  --ssa-content-max: 90rem;
+  --ssa-sidebar-expanded: 17rem;
+  --ssa-sidebar-collapsed: 5rem;
+  --ssa-topbar-height: 4.25rem;
+
+  --ssa-motion-fast: 150ms;
+  --ssa-motion-normal: 200ms;
+  --ssa-motion-slow: 240ms;
+  --ssa-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --ssa-color-bg: #0B1220;
+  --ssa-color-surface: #131E30;
+  --ssa-color-surface-elevated: #19263A;
+  --ssa-color-surface-muted: #17243A;
+
+  --ssa-color-text: #F2F5FA;
+  --ssa-color-text-muted: #A5B1C3;
+  --ssa-color-text-subtle: #8D9AAF;
+  --ssa-color-border: #26354A;
+  --ssa-color-border-strong: #35465D;
+
+  --ssa-color-brand: #7294FF;
+  --ssa-color-brand-hover: #8BA7FF;
+  --ssa-color-brand-soft: #1A2A4D;
+  --ssa-color-accent: #A58AF5;
+  --ssa-color-accent-soft: #2A2148;
+
+  --ssa-color-success: #42C995;
+  --ssa-color-success-soft: #15392F;
+  --ssa-color-warning: #F2BD59;
+  --ssa-color-warning-soft: #3B2D18;
+  --ssa-color-danger: #FF7777;
+  --ssa-color-danger-soft: #421F29;
+  --ssa-color-info: #80B7FF;
+  --ssa-color-info-soft: #172F4D;
+
+  --ssa-shadow-sm: 0 1px 2px rgb(0 0 0 / 18%);
+  --ssa-shadow-md: 0 4px 12px rgb(0 0 0 / 22%);
+  --ssa-shadow-lg: 0 12px 32px rgb(0 0 0 / 30%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ssa-motion-fast: 0ms;
+    --ssa-motion-normal: 0ms;
+    --ssa-motion-slow: 0ms;
+  }
+}
